@@ -8,6 +8,9 @@ jobs:
         steps:
             - name: Welcome message
               run: echo "My frist GitHub Actions Job"
+            
+            - name: Checkout repo
+              uses: actions/checkout@v4
 
             - name: list files
               run: ls
